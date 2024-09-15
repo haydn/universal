@@ -10,9 +10,10 @@ just set the values you want.
 The default styles are removed by a `all: unset` declaration applied to all
 elements **except the following**:
 
+- HTML `head` element
+- HTML [metadata content](https://developer.mozilla.org/en-US/docs/Web/HTML/Content_categories#metadata_content) elements
 - SVG elements
 - MathML elements
-- HTML elements that are normally invisible (`head`, `link`, `meta`, `noscript`, `script`, `style` and `title`)
 
 ### Uses box-sizing
 
