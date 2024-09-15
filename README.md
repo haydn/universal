@@ -5,32 +5,38 @@ just set the values you want.
 
 ## Features
 
-### Unsets browser defaults
+### Unset browser defaults
 
 The default styles are removed by a `all: unset` declaration applied to all
 elements **except the following**:
 
 - HTML `head` element
 - HTML [metadata content](https://developer.mozilla.org/en-US/docs/Web/HTML/Content_categories#metadata_content) elements
+- HTML [embedded content](https://developer.mozilla.org/en-US/docs/Web/HTML/Content_categories#embedded_content) elements
 - SVG elements
 - MathML elements
 
-### Uses box-sizing
+### Use box-sizing
 
-All visible HTML elements are given a `box-sizing: border-box` declaration.
+All HTML elements are given a `box-sizing: border-box` declaration except the
+`head` element and [metadata
+content](https://developer.mozilla.org/en-US/docs/Web/HTML/Content_categories#metadata_content)
+elements.
 
 All `::before` and `::after` pseudo-elements are given a `box-sizing: inherit`
 declaration.
 
-### Retains block elements
+### Retain block elements
 
 Following elements are given a `display: block` declaration:
 
 - `address`
 - `article`
 - `aside`
+- `audio`
 - `blockquote`
 - `body`
+- `canvas`
 - `dd`
 - `details`
 - `dialog`
@@ -51,16 +57,22 @@ Following elements are given a `display: block` declaration:
 - `header`
 - `hgroup`
 - `hr`
+- `iframe`
+- `img`
 - `li`
 - `main`
+- `math`
 - `nav`
+- `object`
 - `ol`
 - `p`
 - `pre`
 - `section`
+- `svg`
 - `ul`
+- `video`
 
-### Retains tables layout
+### Retain tables layout
 
 The `display` properties for table elements are reset back to their normal values:
 
@@ -72,10 +84,11 @@ The `display` properties for table elements are reset back to their normal value
 - `th` (`display: table-cell`)
 - `td` (`display: table-cell`)
 
-### Give embedded content sensible defaults
+### Sensible defaults for embedded content
 
-All embedded content elements are given `display: block` and `max-width: 100%`
-declarations:
+All [embedded
+content](https://developer.mozilla.org/en-US/docs/Web/HTML/Content_categories#embedded_content)
+elements are given `border: none` and `max-width: 100%` declarations:
 
 - `audio`
 - `canvas`

@@ -4,7 +4,6 @@ address,
 area,
 article,
 aside,
-audio,
 b,
 bdi,
 bdo,
@@ -12,7 +11,6 @@ blockquote,
 body,
 br,
 button,
-canvas,
 caption,
 cite,
 code,
@@ -46,8 +44,6 @@ hgroup,
 hr,
 html,
 i,
-iframe,
-img,
 input,
 ins,
 kbd,
@@ -60,7 +56,6 @@ mark,
 menu,
 meter,
 nav,
-object,
 ol,
 optgroup,
 option,
@@ -100,14 +95,19 @@ track,
 u,
 ul,
 var,
-video,
 wbr {
   all: unset;
   box-sizing: border-box;
 }
 
+audio,
+canvas,
+iframe,
+img,
+math,
+object,
 svg,
-math {
+video {
   box-sizing: border-box;
 }
 
@@ -188,5 +188,6 @@ math,
 object,
 svg,
 video {
+  border: none;
   max-width: 100%;
 }
