@@ -12,5 +12,8 @@
   "private": false,
   "files": [
     "universal.css"
-  ]
+  ],
+  "scripts": {
+    "release": "pnpm dlx np --no-tests --no-release-draft"
+  }
 }
