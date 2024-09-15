@@ -1,6 +1,6 @@
 {
   "name": "@haydn/universal",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A CSS reset that strips away almost all of the default browser styles so you can just set the values you want.",
   "repository": "github:haydn/universal",
   "keywords": [
