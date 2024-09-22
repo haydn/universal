@@ -161,6 +161,7 @@ video {
 }
 
 table {
+  border-collapse: collapse;
   display: table;
 }
 thead {

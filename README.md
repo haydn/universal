@@ -84,6 +84,8 @@ The `display` properties for table elements are reset back to their normal value
 - `th` (`display: table-cell`)
 - `td` (`display: table-cell`)
 
+Additionally, the `border-collapse` property is set to `collapse` for `table` elements.
+
 ### Sensible defaults for embedded content
 
 All [embedded
