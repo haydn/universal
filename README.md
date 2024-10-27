@@ -1,14 +1,42 @@
-# Universal
+<div align="center">
+  <h1>
+    <img src="logo.png" alt="Universal CSS reset" width="160" />
+  </h1>
+  <p>A CSS reset that reduces styles to the bare minimum.</p>
+  <p>
+    <img alt="npm" src="https://img.shields.io/npm/dw/@haydn/universal.svg">
+  </p>
+</div>
 
-A CSS reset that strips away almost all of the default browser styles so you can
-just set the values you want.
+## Usage
+
+You can add the CSS to a file directly via [unpkg](https://unpkg.com/):
+
+```html
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/@haydn/universal@latest/universal.css"
+/>
+```
+
+Alternatively, in a JavaScript project you can install the package via npm:
+
+```sh
+npm i @haydn/universal
+```
+
+If your project uses a bundler like Webpack or Parcel, you can import the CSS file directly:
+
+```js
+import "@haydn/universal/universal.css";
+```
 
 ## Features
 
 ### Unset browser defaults
 
-The default styles are removed by a `all: unset` declaration applied to all
-elements **except the following**:
+The default styles are removed by a `all: unset` declaration applied to **all
+elements except the following**:
 
 - HTML `head` element
 - HTML [metadata content](https://developer.mozilla.org/en-US/docs/Web/HTML/Content_categories#metadata_content) elements
@@ -18,7 +46,7 @@ elements **except the following**:
 
 ### Use box-sizing
 
-All HTML elements are given a `box-sizing: border-box` declaration except the
+**All HTML elements** are given a `box-sizing: border-box` declaration **except** the
 `head` element and [metadata
 content](https://developer.mozilla.org/en-US/docs/Web/HTML/Content_categories#metadata_content)
 elements.
@@ -103,9 +131,9 @@ elements are given `border: none` and `max-width: 100%` declarations:
 
 ## Accessibility
 
-Because this reset removes all default browser styles, important defaults for
-accessibility are removed. If you use this reset, you should add your own styles
-to ensure your content accessible:
+This reset removes some important accessibility defaults. If you use this reset,
+you should add your own styles to ensure your content is accessible, most
+importantly:
 
-1. Links should have an underline or similar indicator identify them.
-2. Elements should be highlighted when focused.
+1. Links should be identify with an underline or similar indicator.
+2. Focusable elements should be highlighted when focused.
