@@ -192,3 +192,8 @@ video {
   border: none;
   max-width: 100%;
 }
+
+button {
+  cursor: default;
+}
+
