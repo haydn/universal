@@ -1,0 +1,17 @@
+<link rel="stylesheet" type="text/css" href="../universal.css" />
+<dialog>
+  <button autofocus>Close</button>
+  <p>Dialog content</p>
+</dialog>
+<button>Open</button>
+<script>
+  const dialog = document.querySelector("dialog");
+
+  document.querySelector("dialog + button").addEventListener("click", () => {
+    dialog.showModal();
+  });
+
+  document.querySelector("dialog button").addEventListener("click", () => {
+    dialog.close();
+  });
+</script>

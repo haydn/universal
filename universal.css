@@ -23,6 +23,7 @@ del,
 details,
 dfn,
 dialog,
+dialog::backdrop,
 div,
 dl,
 dt,
@@ -125,7 +126,6 @@ body,
 canvas,
 dd,
 details,
-dialog,
 div,
 dl,
 dt,
@@ -197,3 +197,11 @@ button {
   cursor: default;
 }
 
+dialog {
+  display: none;
+  user-select: revert;
+}
+
+dialog[open] {
+  display: block;
+}
